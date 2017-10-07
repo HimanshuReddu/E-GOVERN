@@ -1,0 +1,112 @@
+{% extends 'gov1/base.html' %}
+{% block title %}e-govern home{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+       <center> <img src="http://exploreindiajourneys.com/wp-content/uploads/2016/06/india6.jpg" alt="Photo" style="width:100%;" width ="60%"> </center>
+      </div>
+
+      <div class="item">
+        <center> <img src="https://ecoreya.files.wordpress.com/2017/05/1.png?w=680" alt="image 1" style="width:100%;" width ="60%"> </center>
+      </div>
+
+      <div class="item">
+        <center> <img src="http://exploreindiajourneys.com/wp-content/uploads/2016/06/india7.jpg" alt="image 2" style="width:100%;" width ="60%"></center>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<br><br>
+
+
+<!-- new and other info stuff driverd fron E_Governance  -->
+
+
+<div class="row" style="margin-top:20px">
+<div class ="col-sm-3" >
+  <!--put an image here-->
+<img src=" https://pbs.twimg.com/profile_images/504184580794884096/JMYya-BC.jpeg" class="img-responsive img-thumbnail" width ="300" height= "250"  align="left" vspace="10" hspace="10">
+</div>
+<div class ="col-sm-6" style="text-align:justify;">
+<p>First-time MLA and first-time Chief Minister, Manohar Lal was born on May 5, 1954 in Nindana village of Rohtak district.
+He was elected from the Karnal Assembly constituency in the Assembly elections, 2014. Forced out of their home during the
+Partition, his family made its way to India in 1947, arriving almost empty-handed. Manohar Lal’s father and grandfather
+took to farming for survival sake.</p>
+
+<p>Haryana is fast emerging as one of the most favoured investment destinations in India.The globalization of markets and a
+buoyant economy have given a tremendous impetus to the industrial sector in Haryana, which already has a competitive
+advantage in terms of strategic location, basic infrastructure as well as large skilled, educated and young workforce.
+Besides, the State has investor-friendly policy environment. However,Haryana is basically an agrarian economy, producing
+variety of food and cash crops, along with dairy products and fisheries. In addition, there are several places of tourist
+interests in the State.</p>
+
+</div>
+<div class = "col-sm-3">
+<div class="panel panel-success">
+<div class="panel-heading">
+Latest News
+</div>
+<div class="panel-body" style="text-align:justify;">
+<p> {% load static %}
+  <!--put an image here-->
+      <img src="http://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/07/16/Pictures/nda-meeting-at-parliament-house_9bdcd09c-6a44-11e7-ae46-9bfe7bf72e96.jpg" class="img-responsive" width="300" vspace="5"/>NDA's Presidential candidate Ram Nath Kovind meets
+Prime Minister Narendra Modi in New Delhi today.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="row" style="margin-top:20px">
+<div class ="col-sm-3" >
+  <!--put an image here-->
+<img src="" class="img-responsive img-thumbnail" width ="300" height= "250"  align="left" vspace="10" hspace="10">
+</div>
+<div class ="col-sm-6" style="text-align:justify;">
+<p> Kaptan Singh Solanki (born 1 July 1939 in Garhpara, Bhind, Madhya Pradesh) is the Governor of Haryana and an Indian politician of the Bharatiya Janata Party. Since August 2009 he is the member of the Parliament of India representing Madhya Pradesh State in the Rajya Sabha, the upper house until May 2014.
+
+He studied at Vikram University, Ujjain, P.G.B.T. College, Ujjain and Maharani Luxmibai College, Jiwaji University, Gwalior. He served as teacher in Banmor in Morena district during 1958-1965 period and as Professor at P.G.V. College Gwalior from 1966-2000. He has been appointed the Governor of Haryana to replace Jagannath Pahadia whose five years terms ends on 26 July 2014.
+
+He has been married to Shrimati Rani Solanki since 1959, and has two daughters and three sons with her.</p>
+
+</div>
+<div class = "col-sm-3">
+<div class="panel panel-primary">
+<div class="panel-body" style="text-align:justify;">
+<p> {% load static %}
+<!--put an image here-->
+      <img src="http://haryanacmoffice.gov.in/themes/backend/uploads/IMAGES%202017/JULY/26/PIC-1.jpg" class="img-responsive" width="400" vspace="5"/>Haryana Governor, Prof. Kaptan Singh Solanki,
+Chief Minister, Mr. Manohar Lal and Art and Culture Minister,Mrs.Kavita Jain with artistes at Teej festival celebrations
+at Haryana Raj Bhavan in Chandigarh on July 26, 2017.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<!--the E_governance ends here -->
+{% endblock %}
+
+
+

@@ -1,0 +1,41 @@
+{% extends 'gov1/base.html' %}
+{% block title %}Death{% endblock %}
+
+{% block body %}
+<div class="container-fluid navbar default">
+  <div class="row">
+    <div class="col-sm-4">
+         <div class="panel panel-warning">
+             <div class="panel-heading"> <b>Death Registration</b></div>
+                <div class="panel-body">
+
+<!--<p>this is about us</p>-->
+<form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+
+    {% csrf_token %}
+   <!-- {% include 'gov1/form_template.html ' %}-->
+    {{form.as_p}}
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-success">Submit</button>
+            <!-- <a href="../gallery"  class="btn btn-info"  role="button"> SEE</a>&nbsp;&nbsp;-->
+        </div>
+    </div>
+
+
+
+
+</form>
+
+
+
+            </div>
+
+         </div>
+
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

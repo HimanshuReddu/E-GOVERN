@@ -1,0 +1,49 @@
+{% extends 'gov1/base.html' %}
+{% block title %}gallery{% endblock %}
+
+{% block body %}
+
+
+<table class="table table-bodered">
+    <thead>
+    <tr>
+        <td><u><b> username</u></b></td>
+        <td><b><u> email </td></u></b>
+        <td><b><u>number </td></u></b>
+        <td><b><u>complaint </td></u></b>
+
+    </tr>
+    </thead>
+    <tbody>
+    {% if object_list %}
+    {% for complaint in object_list %}
+    <tr>
+    <td>{{ complaint.username }}</td>
+    <td>{{ complaint.email }}</td>
+    <td>{{ complaint.number }}</td>
+    <td>{{ complaint.complaint }}</td>
+       <td> <a class="btn btn-primary" href="../show">ver</a>
+       <a class="btn btn-info" href="#">edit</a>
+       <a class="btn btn-success" href="#">change</a>
+       </td>
+    </tr>
+    {% endfor %}
+    {% else %}
+    <h1>no complaints till now</h1>
+    {% endif %}
+    </tbody>
+</table>
+<ul class="pager">
+    <li>
+        {% if page_obj.has_previous %}
+        <a href="?page={{page_obj.previous_page_number}}">Previous</a>
+        {% endif %}
+    </li>
+    <li>
+        {% if page_object.has_next %}
+        <a href="?page={{page_obj.next_page_number}}">Next</a>
+        {% endif %}
+    </li>
+</ul>
+
+{% endblock %}

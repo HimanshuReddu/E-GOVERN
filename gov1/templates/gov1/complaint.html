@@ -1,0 +1,123 @@
+{% extends 'gov1/base.html' %}
+{% block title %}about{% endblock %}
+
+{% block body %}
+
+    <!-- the paragraph-->
+
+
+
+<div class="container-fluid navbar default">
+  <div class="row">
+    <div class="col-sm-4">
+
+        <img src="http://medicaldialogues.in/wp-content/uploads/2016/03/complaints.jpg" class="img-rounded" alt="Cinque Terre" width="400" height="300">
+    </div>
+    <div class="col-sm-8">
+        <u><h3> Complaints</h3></u>
+In this practice we take complaints very seriously indeed and try to ensure
+that all our patients are pleased with their experience of our service. When
+patients complain, they are dealt with courteously and promptly so that the
+matter is resolved as quickly as possible. This procedure is based on these
+objectives.
+Our aim is to react to complaints in the way in which we would want our
+complaint about a service to be handled.
+We learn from every mistake that we make and we respond to customers'
+concerns in a caring and sensitive way.
+        <br>
+1. The person responsible for dealing with any complaint about the service
+which we provide is the Practice Manager.
+        <br>
+2. If a patient complains on the telephone or at the reception desk, we will
+listen to their complaint and offer to refer him or her to the Practice Manager
+immediately. If the Practice manager is not available at the time, then the
+patient will be told when they will be able to talk to the Practice Manager and
+arrangements will be made for this to happen. The member of staff will take
+brief details of the complaint and pass them on. If we cannot arrange this
+within a reasonable period or if the patient does not wish to wait to discuss the
+matter, arrangements will be made for someone else to deal with it.
+        <br>
+3. If the patient complains in writing the letter will be passed on immediately to
+either the appropriate dentist or Practice Manager.
+        <br>
+4. If a complaint is about any aspect of clinical care or associated charges it
+will normally be referred to the dentist, unless the patient does not want this to
+happen.
+        <br>
+5. We will acknowledge the patient's complaint in writing and enclose a copy
+of this code of practice as soon as possible, normally within three working
+days. We will seek to investigate the complaint within ten working days of
+receipt to give an explanation of the circumstances which led to the complaint.
+If the patient does not wish to meet us, then we will attempt to talk to them on
+the telephone. If we are unable to investigate the complaint within ten working
+days we will notify the patient, giving reasons for the delay and a likely period
+within which the investigation will be completed.
+        <br>
+6. We will confirm the decision about the complaint in writing immediately after
+completing our investigation.
+        <br>
+7. Proper and comprehensive records are kept of any complaint received
+
+<br>
+  </div>
+</div>
+
+<br><br><br><br><br>
+
+
+
+
+    <div class="container-fluid navbar default">
+  <div class="row">
+    <div class="col-sm-4">
+         <div class="panel panel-success">
+             <div class="panel-heading"> <b>Complaint</b></div>
+                <div class="panel-body">
+
+<!--<p>this is about us</p>-->
+<form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+
+    {% csrf_token %}
+   <!-- {% include 'gov1/form_template.html ' %}-->
+    {{form.as_p}}
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-success">Submit</button>
+             <a href="../gallery"  class="btn btn-info"  role="button"> SEE</a>&nbsp;&nbsp;
+        </div>
+    </div>
+
+
+
+
+</form>
+
+
+
+            </div>
+
+         </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!--
+    <h2> The complaints are as follows </h2>
+<table border="2"  align="left"><tr><th colspan="4" cellspacing="10" > compaint Detail</th></tr><tr><th>Username</th>
+    <th>email</th></th><th>Number</th><th>complaint</th></tr>
+{%  for complaint in all_complaint %}
+
+    <tr> <th>{{ complaint.username }}</th>
+    <th>{{ complaint.email }}</th>
+        <th>{{ complaint.number }}</th>
+    <th>{{ complaint.complaint }}</th>
+   </tr>
+
+{%  endfor %}
+</table>
+    <br><br><br><br>
+-->
+{% endblock %}

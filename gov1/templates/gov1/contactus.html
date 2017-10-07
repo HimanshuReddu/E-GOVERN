@@ -1,0 +1,18 @@
+{% extends 'gov1/base.html' %}
+{% block title %}about{% endblock %}
+
+{% block body %}
+
+
+<p>this is about us</p>
+
+{%  for complaint in all_complaint %}
+
+    <tr> <th>{{ complaint.username }}</th>
+    <th>{{ complaint.email }}</th>
+        <th>{{ complaint.number }}</th>
+    <th>{{ complaint.complaint }}</th>
+   </tr>
+{%  endfor %}
+
+{% endblock %}

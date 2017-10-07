@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}e-Govern{% endblock %}</title>
+    {% load staticfiles %}
+    <link rel="shortcut icon" type="image/png" href="{%  static 'favicon.ico' %}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static 'gov1/style.css' %}"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+    <!--script src="{% static 'gov1/js/main.js' %}"></script-->
+</head >
+<body background="https://sc01.alicdn.com/kf/HTB13A3UHpXXXXXDXFXXq6xXFXXXJ/201226077/HTB13A3UHpXXXXXDXFXXq6xXFXXXJ.jpg">
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+
+        <!-- Header -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://127.0.0.1:8000">e-gov</a>
+        </div>
+
+        <!-- Items -->
+        <div class="collapse navbar-collapse " id="topNavBar">
+            <ul class="nav navbar-nav ">
+                 <li>
+                    <a href="http://127.0.0.1:8000">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp; Home
+                    </a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:8000/admin">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp; Login
+                    </a>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="../birth">Birth </a></li>
+                          <li><a href="../hospital">hospital</a></li>
+                          <li><a href="../school">school</a></li>
+                          <li><a href="../complaint">complaints</a></li>
+                          <li><a href="../touristplaces">tourist place</a></li>
+                          <li><a href="../death">death registrations</a></li>
+
+                          <!--<li><a href="#">Hotels</a></li>-->
+
+                      </ul>
+                 </li>
+
+            </ul>
+
+            <form class="navbar-form navbar-left" role="search" method="get" action="#">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="q" value="{{ request.GET.q }}">
+                </div>
+                <button type="submit" class="btn btn-default">Search</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="../about">
+                        <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp; About us
+                    </a>
+                </li>
+                <li>
+                    <a href="../gallary">
+                        <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>&nbsp; gallery
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<br>
+{% block body %}
+{% endblock %}
+<br><br><br><br><br>
+<div class="col-sm-2"> </div>
+
+  <!--button type="button" class="btn btn-lg ">Birth Registration</button>&nbsp;-->
+  <a href="../birth" class="btn btn-danger btn-lg"  role="button">Birth Registration </a>&nbsp;&nbsp;
+  <!--<button type="button" class="btn btn-default  btn-lg  "> </button>&nbsp;&nbsp;-->
+  <a href="../hospital" class="btn btn-primary btn-lg"  role="button">Hospitals </a>&nbsp;&nbsp;
+  <a href="../complaint" class="btn btn-success btn-lg"  role="button">Complaints </a>&nbsp;&nbsp;
+  <a href="../school" class="btn btn-info btn-lg"  role="button">School</a>&nbsp;&nbsp;
+  <a href="../death"  class="btn btn-warning btn-lg"  role="button">Death Registration </a>&nbsp;&nbsp;
+
+  <a href="../touristplaces"  class="btn btn-danger btn-lg"  role="button">Tourist Places </a>&nbsp;&nbsp;
+
+<br><br><br>
+ <u><b><a href="http://127.0.0.1:8000/admin"> <img src="http://sgps.in/admin/images/login_icon.png"  class="img-circle" width="100 height="100"></a></b></u>
+<div class="col-sm-4"> </div>
+<!--/div-->
+<!--div class="col-sm-4"-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><u><i> <a href="http://127.0.0.1:8000/"> <img src="http://tecdistro.com/wp-content/uploads/2015/04/user.png?x80029"  class="img-circle" width="100" height="100"></a></i></u></b>
+
+<br><br><br><br><br>
+<div class="container-fluid navbar default">
+  <div class="row">
+    <div class="col-sm-4">
+         <div class="panel panel-success">
+             <div class="panel-heading"> <b>Address</b></div>
+            <div class="panel-body">INSURANCE REGULATORY AND DEVOLPMENT AUTHORITY
+ Delhi Office - Gate No.3, Jeevan Tara Building, First Floor, Sansad Marg, Delhi - 110001
+            </div>
+         </div>
+    </div>
+    <div class="col-sm-4">
+
+        <ul class="list-group" style="margin-top:20px;">
+            <li class="list-group-item">
+                 <a href="https://twitter.com/indiangov?lang=en">
+                     <i style="font-size:24px" class="fa">&#xf081;</i> &nbsp; <b>Twitter</b>
+                    </a>
+            </li>
+            <li class="list-group-item">
+                 <a href="https://www.facebook.com/NationalPortalIndia/">
+                     <i style="font-size:24px" class="fa">&#xf082;</i> &nbsp; <b>Facebook</b>
+                    </a>
+            </li>
+             <li class="list-group-item">
+                 <a href="https://plus.google.com/+MEAIndia">
+                        <i style="font-size:24px" class="fa">&#xf0d5;</i> &nbsp;<b>Google +</b>
+                    </a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="col-sm-4">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="http://www.culturalindia.net/iliimages/National-Emblem-1.jpg" class="img-circle" width="300" />
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
